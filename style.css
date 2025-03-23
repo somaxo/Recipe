@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --font-primary: "Young Serif", serif;
+  --font-secondary: "Outfit", sans-serif;
+  --white: hsl(0, 0%, 100%);
+  --stone-one: hsl(30, 54%, 90%);
+  --stone-two: hsl(30, 18%, 87%);
+  --stone-three: hsl(30, 10%, 34%);
+  --stone-four: hsl(24, 5%, 18%);
+  --brown: hsl(14, 45%, 36%);
+  --rose-one: hsl(332, 51%, 32%);
+  --rose-two: hsl(330, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* img {
+  width: 100vw;
+  height: 25vh;
+  object-fit: cover;
+} */
+
+img {
+    width: 100vw; /* Full viewport width */
+    height: 20vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+    display: block; /* Removes extra space below the image */
+}
+
+.big-screen-img{
+  display:none;
+}
+/* .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  
+} */
+
+
+.content,
+ul,
+ol {
+  margin: 20px;
+}
+
+.heading {
+  margin-bottom: 7px;
+}
+
+h1,
+h2 {
+  font-family: var(--font-primary);
+}
+h1 {
+  color: var(--stone-four);
+  font-size: 25px;
+}
+
+h2 {
+  color: var(--brown);
+  font-size: 19px;
+}
+
+p,
+li {
+  font-family: var(--font-secondary);
+  color: var(--stone-three);
+}
+
+span {
+  font-weight: bold;
+}
+
+.section-one {
+  margin-bottom: 10px;
+}
+
+
+.section-two {
+  background-color: var(--rose-two);
+padding-bottom: 1px;
+  border-radius: 13px;
+      margin: 30px 0;
+}
+
+.section-two li::marker {
+    color:var(--rose-one);/* Change bullet color */
+}
+
+
+.section-two p, .section-two ul{
+    padding-left: 17px;
+}
+
+.section-two p{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--rose-one);
+    padding-top: 15px;
+}
+
+.section-two ul li span{
+margin-left: 12px;
+}
+
+.section-two ul li{
+
+    margin-bottom: 7px;
+}
+
+.section-three ul li{
+padding-left: 5px;
+margin-bottom: 7px;
+}
+
+.section-three li::marker {
+    color:var(--brown); /* Change bullet color */
+}
+
+.section-three-hr{
+    margin: 30px 0;
+   border: 1px solid hsl(30, 18%, 87%);
+}
+
+.section-four li::marker {
+    color:var(--brown); /* Change bullet color */
+    font-weight: bold;
+}
+
+.section-four ol li{
+padding-left: 5px;
+margin-bottom: 7px;
+}
+.section-four-hr{
+    margin: 30px 0;
+   border: 1px solid hsl(30, 18%, 87%);
+}
+
+.section-five-p{
+    margin: 10px 0;
+}
+
+
+.table-content {
+    display: flex;
+    justify-content:space-between; /* Aligns text to both sides */
+    align-items: center; /* Centers text vertically */
+    padding: 10px 0;
+}
+
+hr {
+    border: none;
+       border: 1px solid hsl(30, 18%, 87%);
+ 
+}
+
+.quantity {
+    font-weight: bold;
+    color: var(--brown);
+}
+
+@media (min-width: 768px){
+body{
+  background-color: var(--stone-one);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin:50px auto;
+  max-width: 340px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  
+}
+
+
+img {
+   display: none;
+}
+
+.big-screen-img{
+  display:block;
+  width: 100%;
+  max-width: 100%;
+  height: 30vh;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+
+}
